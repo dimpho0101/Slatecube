@@ -1,11 +1,11 @@
 .block-left{
-    width:30%;
+    width:25%;
     height:100vh;
     background-color: #1f3a56;
     float:left;
   }
   .block-right{
-    width:70%;
+    width:75%;
     height:100vh;
     background-color:#ffff;
     float:left;
@@ -13,7 +13,7 @@
   
   /* MEDIA QUERIES FOR 545px <= Resolutions */ 
   
-  @media (max-width:200px){
+  @media (max-width:1000px){
     .block-left{
       display:block;
       width:100%;
@@ -129,29 +129,34 @@
         color: #b5b5b5;
     }
 
-    .main-body #square{
+     #square{
         position: relative; 
         padding: 0px 0px 0px 10px;
-        height: 550px;
+        height: 450px;
         width: 550px;
         background-color: #ffff;
     }
-
-    #square h1{
-      color: #f2f2f2;
-      font-weight: bold;
+     .square {
+      right: -50px;
     }
-    #square p{
+
+    .square .h1{
+      color: #f2f2f2;
+      /* font-weight: bold; */
+    }
+   .square p{
       color:#7ad3c7;
       font-weight: bold;
     }
 
-    #square h1, #square p{
+    .square h1{
       display: inline;
       vertical-align: top;
       font-family: sans-serif;
-      font-size: 25px;
-      line-height: 40px;   
+      font-size: 45px;
+      line-height: 40px;
+      color: #F2F2F2;
+      padding: 20px;
     }
 
     .hr{
@@ -170,7 +175,6 @@
 
     .button.rounded {
       border-radius: 100px;
-      float: right;
     }
     .circle{
       margin: 150px;
@@ -184,6 +188,29 @@
 
     .button.circle{
       border-radius: 100px;
-      float: left;
     }
-  
+  .cubes{
+    position: relative;
+    left: 25px;
+    background-color: #ffff;
+    height:250px;
+    width:450px;
+    border-radius: 10px;
+  }
+
+  .inline-block-child {
+    display: inline-block;
+  }
+
+  .cubes {
+    padding: 1rem
+  }
+  .pcube{
+    position: relative;
+    left: 25px;
+    background-color: #566be3;
+    height:250px;
+    width:250px;
+    border-radius: 10px;
+    padding: 1rem
+  }
